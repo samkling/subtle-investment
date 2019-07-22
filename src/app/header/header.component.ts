@@ -8,6 +8,7 @@ import {PageInfo} from '../blog-posts/PageInfo';
 })
 export class HeaderComponent implements OnInit {
   @Input() pageInformation;
+  @Input() isPost = false;
 
   constructor() { }
 

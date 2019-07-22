@@ -24,20 +24,20 @@ export class PostPageComponent implements OnInit {
   }
 
   getPageInfo(): PageInfo {
-    POSTS.forEach( post => {
-      if ( post.id == this.postId ) {
-        return post;
-      }
-    });
-
-    let errorPost: PageInfo = {
+    let pageInfo = {
       id: 0,
       heading: "Post Not Found",
       subHeading: "Invalid Post ID",
       post: "You have tried to find a post that does not exist"
     };
-    
-    return errorPost;
+
+    POSTS.forEach( post => {
+      if ( post.id == this.postId ) {
+        pageInfo = post;
+      }
+    });
+
+    return pageInfo;
   }
 
 }
