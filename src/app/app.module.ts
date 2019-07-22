@@ -13,14 +13,10 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { PagerComponent } from './pager/pager.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'post/:id', component: PostPageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
   { path: '**', component: HomePageComponent }
 ];
 
