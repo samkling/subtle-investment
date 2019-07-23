@@ -1,4 +1,20 @@
-<header *ngIf="isPost; else homePage" class="masthead" style="background-image: url('../../assets/img/post-bg.jpg')">
+<!--HomePage Heading-->
+<header *ngIf="isHome" class="masthead" style="background-image: url('../../assets/img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>{{pageInformation.heading}}</h1>
+          <span class="subheading">{{pageInformation.subHeading}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Page Heading-->
+<header *ngIf="isPost" class="masthead" style="background-image: url('../../assets/img/post-bg.jpg')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -15,18 +31,33 @@
   </div>
 </header>
 
-<ng-template #homePage>
-  <header class="masthead" style="background-image: url('../../assets/img/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>{{pageInformation.heading}}</h1>
-            <span class="subheading">{{pageInformation.subHeading}}</span>
-          </div>
+<!--About Page Heading-->
+<header *ngIf="isAbout" class="masthead" style="background-image: url('../../assets/img/about-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>{{pageInformation.heading}}</h1>
+          <span class="subheading">{{pageInformation.subHeading}}</span>
         </div>
       </div>
     </div>
-  </header>
-</ng-template>
+  </div>
+</header>
+
+<!-- Contact Page Heading-->
+<header *ngIf="isContact" class="masthead" style="background-image: url('../../assets/img/contact-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>{{pageInformation.heading}}</h1>
+          <span class="subheading">{{pageInformation.subHeading}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
