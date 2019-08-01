@@ -1,5 +1,5 @@
 export class PageInfo {
-  id: number;
+  id: string;
   heading: string;
   subHeading: string;
   post: string;

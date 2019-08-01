@@ -11,7 +11,7 @@ const POSTS = BLOG_POSTS;
   styleUrls: ['./post-page.component.scss']
 })
 export class PostPageComponent implements OnInit {
-  postId: number;
+  postId: string;
   pageInfo: PageInfo;
 
   constructor(private route: ActivatedRoute,
@@ -19,13 +19,13 @@ export class PostPageComponent implements OnInit {
 
   ngOnInit() {
     let id = this.route.snapshot.paramMap.get('id');
-    this.postId = Number(id);
+    this.postId = id;
     this.pageInfo = this.getPageInfo();
   }
 
   getPageInfo(): PageInfo {
     let pageInfo = {
-      id: 0,
+      id: '',
       heading: "Post Not Found",
       subHeading: "Invalid Post ID",
       post: "You have tried to find a post that does not exist"

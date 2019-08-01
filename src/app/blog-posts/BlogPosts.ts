@@ -4,19 +4,19 @@ const SAM = "Sam Kling"
 
 export const MAIN_PAGES: PageInfo[] = [
   {
-    id: 1,
+    id: '',
     heading: "SubtleInvesting.com",
     subHeading: "Making use of clever and indirect methods to better personal finance",
     post: "This is my Home post"
   },
   {
-    id: 2,
+    id: '',
     heading: "About Page Heading",
     subHeading: "This is my About page",
     post: "This is my About post"
   },
   {
-    id: 3,
+    id: '',
     heading: "About Contact Heading",
     subHeading: "This is my Contact page",
     post: "This is my Contact post"
@@ -25,7 +25,7 @@ export const MAIN_PAGES: PageInfo[] = [
 
 export const BLOG_POSTS: PageInfo[] = [
   {
-    id: 1,
+    id: 'best-credit-cards',
     heading: "This is about credit cards",
     subHeading: "Credit cards are fun",
     post: "Post about credit cards!",
@@ -33,7 +33,7 @@ export const BLOG_POSTS: PageInfo[] = [
     author: SAM
   },
   {
-    id: 2,
+    id: 'best-savings-accounts',
     heading: "This is about savings accounts",
     subHeading: "Savings accounts are fun",
     post: "Post about savings Accounts!",
@@ -41,7 +41,7 @@ export const BLOG_POSTS: PageInfo[] = [
     author: SAM
   },
   {
-    id: 3,
+    id: 'best-investing',
     heading: "This is about investing",
     subHeading: "Investing is fun!",
     post: "Post about investing!",
