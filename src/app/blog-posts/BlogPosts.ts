@@ -11,9 +11,9 @@ export const MAIN_PAGES: PageInfo[] = [
   },
   {
     id: '',
-    heading: "About Page Heading",
-    subHeading: "This is my About page",
-    post: "This is my About post"
+    heading: "About Me",
+    subHeading: "",
+    post: ""
   },
   {
     id: '',
