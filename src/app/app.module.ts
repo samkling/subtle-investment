@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PagerComponent } from './pager/pager.component';
+import { PostImageComponent } from './post-image/post-image.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     FooterComponent,
     HeaderComponent,
     NavigationComponent,
-    PagerComponent
+    PagerComponent,
+    PostImageComponent
   ],
   imports: [
     BrowserModule,
