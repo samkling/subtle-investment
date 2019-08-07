@@ -1,5 +1,6 @@
 <!--HomePage Heading-->
-<header *ngIf="isHome" class="masthead" style="background-image: url('../../assets/img/home-bg.jpg')">
+<header *ngIf="isHome" class="masthead"
+        [style.background-image]="'url(' + pageInformation.headerImage + ')'">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -14,7 +15,8 @@
 </header>
 
 <!-- Post Page Heading-->
-<header *ngIf="isPost" class="masthead" style="background-image: url('../../assets/img/post-bg.jpg')">
+<header *ngIf="isPost" class="masthead"
+        [style.background-image]="'url(' + pageInformation.headerImage + ')'">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -32,7 +34,8 @@
 </header>
 
 <!--About Page Heading-->
-<header *ngIf="isAbout" class="masthead" style="background-image: url('../../assets/img/about-bg.jpg')">
+<header *ngIf="isAbout" class="masthead"
+        [style.background-image]="'url(' + pageInformation.headerImage + ')'">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -47,7 +50,8 @@
 </header>
 
 <!-- Contact Page Heading-->
-<header *ngIf="isContact" class="masthead" style="background-image: url('../../assets/img/contact-bg.jpg')">
+<header *ngIf="isContact" class="masthead"
+        [style.background-image]="'url(' + pageInformation.headerImage + ')'">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">

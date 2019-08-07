@@ -8,7 +8,7 @@ import {PageInfo} from '../blog-posts/PageInfo';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  pageInfo = MAIN_PAGES[0];
+  pageInfo: PageInfo = MAIN_PAGES[0];
   postInfo = BLOG_POSTS;
 
   constructor() { }

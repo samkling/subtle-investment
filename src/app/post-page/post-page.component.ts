@@ -27,6 +27,7 @@ export class PostPageComponent implements OnInit {
     let pageInfo = {
       id: '',
       heading: "Post Not Found",
+      headerImage: '',
       subHeading: "Invalid Post ID",
       post: "You have tried to find a post that does not exist"
     };
