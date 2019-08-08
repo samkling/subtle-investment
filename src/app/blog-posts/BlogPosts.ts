@@ -20,10 +20,10 @@ export const MAIN_PAGES: PageInfo[] = [
   },
   {
     id: '',
-    heading: "Contact Heading",
-    headerImage: IMAGE_PATH + 'contact-bg.jpg',
-    subHeading: "This is my Contact page",
-    post: "This is my Contact post"
+    heading: "Contact Me",
+    headerImage: IMAGE_PATH + 'contact-page-banner.jpg',
+    subHeading: '',
+    post: ''
   }
 ];
 
