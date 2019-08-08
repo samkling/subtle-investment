@@ -14,7 +14,7 @@ export const MAIN_PAGES: PageInfo[] = [
   {
     id: '',
     heading: "About Me",
-    headerImage: IMAGE_PATH + 'about-bg.jpg',
+    headerImage: IMAGE_PATH + 'about-page-banner.jpg',
     subHeading: '',
     post: '',
   },
